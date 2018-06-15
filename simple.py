@@ -7,7 +7,6 @@ Usage:
     python3 simple.py
 """
 
-
 import re
 
 def get_phrase():
@@ -23,17 +22,18 @@ def get_phrase():
     return phrase
 
 
-def clean_phrase(phrase):
-    """Remove all characters that aren't [A-Za-z] from a phrase, lc the result.
+def process_phrase(phrase):
+    """Remove all characters that aren't [A-Za-z] from a phrase, lc that,
+split the phrase into a list of characters for assignement to notes.
 
     Args:
-        Phrase to be cleaned up.
+        Phrase to be processed.
 
     Returns:
-        The cleaned up phrase.
+        List of characters derived from the phrase.
     """
     cleaned = re.sub(r'[^a-zA-Z]', '', phrase).lower()
-    return cleaned
+    return list(cleaned)
 
 
 def print_phrase(phrase):
@@ -49,7 +49,8 @@ def main():
     """Take a string and transorm it into a series of musical notes.
 
     """
-    print_phrase(clean_phrase(get_phrase()))
+    processed = process_phrase(get_phrase())
+    print_phrase(processed)
 
 
 if __name__ == '__main__':
