@@ -8,6 +8,12 @@ Usage:
 """
 
 import re
+import string
+
+
+notes = ['C','C#','Db','D','D#','Eb','F','F#','Gb','G','G#','Ab','A','A#','Bb','B']
+alphas_to_notes = dict(zip(notes, string.ascii_lowercase))
+
 
 def get_phrase():
     """Prompt the user to enter a phrase
@@ -24,33 +30,43 @@ def get_phrase():
 
 def process_phrase(phrase):
     """Remove all characters that aren't [A-Za-z] from a phrase, lc that,
-split the phrase into a list of characters for assignement to notes.
+split the phrase into consonants and vowels.
 
     Args:
         Phrase to be processed.
 
     Returns:
-        List of characters derived from the phrase.
+        Tuple of vowels and consonants for unpacking.
     """
-    cleaned = re.sub(r'[^a-zA-Z]', '', phrase).lower()
-    return list(cleaned)
+    cleaned = re.sub(r'[^A-Za-z]', '', phrase).lower()
+
+    vowels = []
+    consonants = []
+    for x in list(cleaned):
+        if re.search(r'[aeiouy]', x):
+            vowels.append(x)
+        else:
+            consonants.append(x)
+
+    return vowels, consonants
 
 
 def print_phrase(phrase):
-    """Prints whatever phrase is passed to it to STDOUT.
+    """Prints the vowels and consonants of a phrase to STDOUT.
 
     Args:
-        Phrase (string)
+        Phrase to be printed
     """
-    print(phrase)
-
+    vowels, consonants = process_phrase(phrase)
+    print("vowels are: {}".format(vowels))
+    print("consonants are: {}".format(consonants))
 
 def main():
     """Take a string and transorm it into a series of musical notes.
 
     """
-    processed = process_phrase(get_phrase())
-    print_phrase(processed)
+    phrase = get_phrase()
+    print_phrase(phrase)
 
 
 if __name__ == '__main__':
