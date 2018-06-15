@@ -21,3 +21,7 @@ synthesizing data from https://scansf.com streams into, something
 random notes from creamy ron
  - https://cloud.google.com/speech-to-text/
  - https://github.com/jcsilva/docker-kaldi-gstreamer-server/blob/master/README.md
+
+http://facweb.furman.edu/~wrogers/phonemes/phone/pde/pcons.htm
+^^^ could do some set math on that to find a group of 16 that would correspond
+to the notes on a scale
