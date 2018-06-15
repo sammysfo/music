@@ -1,0 +1,157 @@
+red,felony want or record,other
+a,audible,other
+s,silent,other
+x,female,other
+j,juvenile,other
+ea,elder abuse,other
+ca,child abuse,other
+dv,domestic violence,other
+code 3,emergency response,other
+code 4,no further assistance required (specify reason),other
+10-1,receiving poorly,tencode
+10-2,receiving well,tencode
+10-4,message received,tencode
+10-7a,out of service (administrative duties),tencode
+10-7b,out of service (beginning of watch),tencode
+10-7c,out of service (court),tencode
+10-7e,out of service (end of watch),tencode
+10-7f,out of service (follow-up),tencode
+10-7g,out of service (gas/garage),tencode
+10-7i,out of service (investigation),tencode
+10-7m,out of service (meal),tencode
+10-7r,out of service (range/radio shop),tencode
+10-7s,out of service (station),tencode
+10-7t,out of service (traffic control/training),tencode
+10-8,in service,tencode
+10-8f,in service (foot patrol),tencode
+10-9,repeat last message,tencode
+10-13,advise condition at scene,tencode
+10-20,location,tencode
+10-22,cancel,tencode
+10-23,standby temporarily,tencode
+10-25,respond as backup (specify code & number of units),tencode
+10-28,vehicle registration information,tencode
+10-29,warrant/record/vehicle check,tencode
+10-30,stolen vehicle/ wanted person,tencode
+10-32,person or vehicle is not wanted,tencode
+10-34,confidential information follows,tencode
+10-35,person must consent to search,tencode
+10-36,emergency notification,tencode
+10-43,of interest to special investigations,tencode
+10-96,marked units stay out of area,tencode
+10-97,arrived at scene,tencode
+10-98,enroute to new location,tencode
+100,alarm (audible or silent),numeric
+148,resisting arrest,numeric
+152,drunk driver,numeric
+187,homicide,numeric
+200,rat signal activation,numeric
+207,kidnapping,numeric
+211,robbery,numeric
+212,strong-arm robbery,numeric
+213,purse snatch,numeric
+216,shots fired,numeric
+217,shooting,numeric
+219,stabbing or cutting,numeric
+221,person with a gun,numeric
+222,person with a knife,numeric
+240,assault/battery,numeric
+245,aggravated assault/ adw (assault with deadly weapon),numeric
+261,rape/ sexual assault (victim over 14 yrs),numeric
+288,sexual assault (victim under 15yrs),numeric
+311,indecent exposure,numeric
+368,elder abuse,numeric
+400,demonstration/pickets,numeric
+404,riot,numeric
+405,citizen holding a prisoner,numeric
+406,officer needs emergency help,numeric
+407,prisoner transportation,numeric
+408,ambulance,numeric
+409,tow truck,numeric
+410,requested assistance responding,numeric
+415,noise complaint/ disturbing the peace,numeric
+416,citizen standby,numeric
+417,person ringing doorbells,numeric
+418,fight or dispute (no weapons),numeric
+419,fight with weapons (specify the weapon),numeric
+420,juvenile disturbance,numeric
+421,positive youth interaction,numeric
+423,citizen/community engagement,numeric
+459,burglary,numeric
+470,fraud,numeric
+487,grand theft,numeric
+488,grand theft,numeric
+496,receiving stolen property,numeric
+518,vehicle accident- no injury,numeric
+519,vehicle accident- injury,numeric
+520,aided case,numeric
+527,bonfire,numeric
+528,fire,numeric
+529,explosion,numeric
+531,suspected explosive device found,numeric
+532,suspicious mailing,numeric
+535,traffic stop,numeric
+586,traffic congestion,numeric
+587,parking violation,numeric
+588,driveway violation,numeric
+594,malicious mischief/ vandalism,numeric
+595,malicious mischief/ graffiti,numeric
+596,abandoned vehicle,numeric
+600,roadblock,numeric
+601,trespasser,numeric
+602,person breaking in,numeric
+603,prowler,numeric
+646,stalking,numeric
+647b,prostitute,numeric
+650,threats,numeric
+799,senile person,numeric
+800,mentally disturbed person,numeric
+801,person attempting suicide,numeric
+802,coroner's case,numeric
+805,truant,numeric
+806,juvenile beyond control,numeric
+807,missing juvenile,numeric
+809,missing person,numeric
+811,intoxicated person,numeric
+819,rolling of a drunk,numeric
+851,stolen vehicle,numeric
+852,auto boost/strip,numeric
+853,recovered stolen vehicle,numeric
+901,telephone station (or other location),numeric
+902,return to station,numeric
+903,passing calls,numeric
+904,meet an officer (non emergency),numeric
+905,meet with a city/public service employee,numeric
+908,muni bus inspection program,numeric
+909,interview a citizen,numeric
+910,check on well being,numeric
+911,broken window,numeric
+912,person dumping trash,numeric
+913,unknown type of complaint,numeric
+914,person down,numeric
+915,homeless related call for service,numeric
+916,suspicious person in a vehicle,numeric
+917,suspicious person,numeric
+918,person yelling/ screaming for help,numeric
+919,sitting/ lying on public sidewalks,numeric
+920,aggressive soliciting,numeric
+5150,mental health detention,numeric
+1000,prison escape/ escape from juvenile justice center,numeric
+aba,abated,disposition
+adm,admonished,disposition
+adv,advised,disposition
+arr,arrest,disposition
+can,cancel,disposition
+csa,cpsa assignment,disposition
+22,cancel,disposition
+cit,cited,disposition
+crm,criminal activation,disposition
+goa,gone on arrival,disposition
+han,handled,disposition
+ncr,non-criminal,disposition
+nd,no disposition,disposition
+nom,no merit,disposition
+pas,premises appears secure,disposition
+rep,report,disposition
+utl,unable to locate,disposition
+vas,vehicle appears secure,disposition
