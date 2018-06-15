@@ -10,3 +10,10 @@ data types:
 
 88 keys on grand piano as as dictionary/hash
 
+synthesizing data from https://scansf.com streams into, something
+ - good text to speach POC
+ - decent time series datastream
+  - good granularity
+  - not insane volume
+  - really interesting content
+  - already exists a phonetic/linguistic dictionary/hashed translation layer
